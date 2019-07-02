@@ -1,17 +1,17 @@
 import React from 'react';
+import ImprovedButton from"./ImprovedButton"
 
-
-export default function MyButton(props) {
+export default function App() {
 
     
-    return (<div> (
-    <button onClick={props.onSimpleclick}
-    style={{backgroundColor:(props.visited)?"red":"blue"}}>
-        {props.children}
-    </button>]
-    </div>
+    return (
+        <div className="App">
+            <ImprovedButton
+            onClick={()=>window.location="https://reactjs.org/"}>My Facebook</ImprovedButton>
+        </div>
     );
-}
+    
+};
 
 
 
